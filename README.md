@@ -1,47 +1,86 @@
-# Svelte + TS + Vite
+# Personal Portfolio
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+A modern, responsive portfolio website built with SvelteKit and TailwindCSS. This portfolio showcases my projects, skills, and experience with a clean and professional design.
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- 🌓 Dark/Light mode with system preference detection
+- 📱 Fully responsive design
+- ⚡ Smooth animations and transitions
+- 🎨 Modern UI with TailwindCSS
+- 🔍 SEO optimized
+- 🚀 Fast performance with SvelteKit
 
-## Need an official Svelte framework?
+## Tech Stack
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+- [SvelteKit](https://kit.svelte.dev/) - Frontend framework
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [EmailJS](https://www.emailjs.com/) - Contact form functionality
 
-## Technical considerations
+## Projects Showcase
 
-**Why use this over SvelteKit?**
+The portfolio includes several featured projects:
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+1. **HOKI Shop**
+   - A mobile marketplace for foreign workers to purchase essential vouchers and services needed for working in Taiwan
+   - Built with Flutter
+   - Available on Google Play Store
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+2. **Tablelink Backoffice**
+   - A comprehensive backoffice system for managing all master data and configurations across the Tablelink application ecosystem
+   - Built with Flutter, Firebase, and Supabase
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+3. **BIA Regina Caeli**
+   - A website for children attendance and child absence recording
+   - Built with PHP, Laravel, React, and Next.js
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## Skills
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+The portfolio showcases various technical skills including:
 
-**Why include `.vscode/extensions.json`?**
+- Frontend Development (React, Svelte, Flutter)
+- Backend Development (PHP, Laravel)
+- Database Management (Supabase, Firebase)
+- Mobile Development (Flutter)
+- Web Development (Next.js)
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+## Getting Started
 
-**Why enable `allowJs` in the TS template?**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/svelte-portfolio.git
+   ```
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Why is HMR not preserving my local component state?**
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+## Environment Variables
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+Create a `.env` file in the root directory with the following variables:
+
+```env
+PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
 ```
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
