@@ -16,7 +16,6 @@ A modern, responsive portfolio website built with SvelteKit and TailwindCSS. Thi
 - [SvelteKit](https://kit.svelte.dev/) - Frontend framework
 - [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [EmailJS](https://www.emailjs.com/) - Contact form functionality
 
 ## Projects Showcase
 
@@ -66,16 +65,6 @@ The portfolio showcases various technical skills including:
    ```bash
    npm run build
    ```
-
-## Environment Variables
-
-Create a `.env` file in the root directory with the following variables:
-
-```env
-PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
-```
 
 ## Contributing
 
